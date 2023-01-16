@@ -23,7 +23,7 @@ class Measurement(models.Model):
     measure = models.PositiveIntegerField()
 
     class Meta:
-        unique_together = ['meter', 'measure']
+        unique_together = ['meter', 'registry_date']
         verbose_name = "medición"
         verbose_name_plural = 'mediciones'
         ordering = ['-registry_date']
